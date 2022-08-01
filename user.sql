@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `Base_of_Currency`.`currencies` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `currency` VARCHAR(225) NOT NULL,
+  `value` VARCHAR(225) NOT NULL,
+  `created` VARCHAR(225) NOT NULL,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  PRIMARY KEY (`id`))

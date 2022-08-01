@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitki&Mutki</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        id="btn"
+        class="item"
+        onclick="getBtcUsdt('BTCUSDT', ['resInOne', 'resOutOne'])"
+      >
+        BTCUSDT
+      </div>
+      <div
+        class="item"
+        onclick="getBtcUsdt('ETHUSDT', ['resInTwo', 'resOutTwo'])"
+      >
+        ETHUSDT
+      </div>
+      <div
+        class="item"
+        onclick="getBtcUsdt('BNBBTC', ['resInThree', 'resOutThree'])"
+      >
+        BNBBTC
+      </div>
+      <div id="resInOne" class="item">0</div>
+      <div id="resInTwo" class="item">0</div>
+      <div id="resInThree" class="item">0</div>
+      <div id="resOutOne" class="item">0%</div>
+      <div id="resOutTwo" class="item">0%</div>
+      <div id="resOutThree" class="item">0%</div>
+      <!-- <div class="BTCUSDT" onclick="reqBTCUSDT()">BTCUSDT</div>
+      <div class="ETHUSDT" onclick="reqETHUSDT()">ETHUSDT</div>
+      <div class="BNBBTC" onclick="reqBNBBTC()">BNBBTC</div> -->
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
